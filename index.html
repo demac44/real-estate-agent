@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tina McCarty | Real estate</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="container-fluid">
+            <!-- CONTACT INFO -->
+            <div class="container d-flex justify-content-between p-0">
+                <div class="d-lg-flex pt-3">
+                    <p class="text-muted small">
+                        <i class="bi-telephone-fill mr-1"></i>
+                        416-885-1445
+                    </p>
+                    <p class="text-muted ml-lg-5 small">
+                        <i class="bi-envelope-fill mr-1"></i>
+                        tinamccarty@sympatico.ca
+                    </p>
+                </div>
+                <div class="d-sm-flex pt-3 social-icons">
+                    <a href="#"><i class="bi-instagram"></i></a>
+                    <a href="#"><i class="bi-facebook"></i></a>
+                    <a href="#"><i class="bi-linkedin"></i></a>
+                    <a href="#"><i class="bi-twitter"></i></a>
+                </div>
+            </div>
+
+
+            <!-- BANNER CONTAINER  -->
+            <div class="container-fluid p-0 position-relative" style="height: 100vh;">
+                <img src="./assets/img/play-button.png" class="position-absolute play-btn" alt="">
+                <div class="d-flex flex-column w-100 position-absolute banner-overlay">
+
+                    <nav class="navbar navbar-expand-lg pt-lg-5 pt-3">
+                        <div class="container">
+                            <a href="#" class="navbar-brand text-center text-light logo p-2">
+                                <img src="./assets/img/logo.png" style="width: 250px;" alt="">
+                            </a>
+
+                            <button class="navbar-toggler bg-dark border toggle-nav-btn" type="button" data-toggle="collapse" data-target="#tnavbar" aria-controls="tnavbar">
+                                <i class="bi-list text-light"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse container-fluid top-nav-menu" id="tnavbar">
+                                <button class="navbar-toggler bg-dark border toggle-nav-btn-inner d-md-none" type="button" data-toggle="collapse" data-target="#tnavbar" aria-controls="tnavbar">
+                                    <i class="bi-list text-light"></i>
+                                </button>
+                                <ul class="d-md-flex flex-md-row justify-content-between navbar-nav m-auto p-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">WELCOME</a>
+                                    </li>                            
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">FREE REPORTS</a>
+                                    </li>                            
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">PROPERTIES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">BUYERS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="">SELLERS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </nav>
+                    <div class="p-3 text-center text-light property-search">
+                        <h6 class="mb-2">PROPERTY SEARCH</h6>
+                        <div class="container d-md-flex justify-content-between p-3">
+                            <i class="bi-search h3 mt-2"></i>
+                            <input type="text" class="col-md-4 mt-1 small" placeholder="Enter any city, community, street name of MLS">
+                            <input type="number" class="col-md-2 mt-1" placeholder="Min price">
+                            <input type="number" class="col-md-2 mt-1" placeholder="Max price">
+                            <input type="text" class="col-md-2 mt-1" value="MLS #">
+                            <button type="button" class="btn btn-link text-white border border-white rounded-0">SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICES CONTAINER -->
+            <div class="container py-5">
+                <div class="d-flex justify-content-center row service-cards">
+                    <div class="card col-sm-4 col-lg service-card">
+                        <span class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <button class="btn btn-white text-dark border rounded-0">BUYERS</button>
+                        </span>
+                    </div>                        
+                    <div class="card col-sm-4 col-lg service-card">
+                        <span class="card-overlay">
+                            <button class="btn btn-link text-light border rounded-0">SELLERS</button>
+                        </span>
+                    </div>                        
+                    <div class=" card col-sm-4 col-lg service-card">
+                        <span class="card-overlay">
+                            <button class="btn btn-white text-dark border rounded-0">SEARCH</button>
+                        </span>
+                    </div>                        
+                    <div class="card col-sm-4 col-lg service-card">
+                        <span class="card-overlay">
+                            <button class="btn btn-link text-light border rounded-0">PROJECT</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMUNITIES CAROUSEL -->
+            <div id="carousel" class="carousel slide container-fluid m-1 p-2 bg-white" data-ride="carousel">
+                <div class="container">
+                    <p>COMMUNITIES</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex row p-2 carousel-box">
+                                <div class="col-md-6">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-light border rounded-0">TORONTO</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/toronto.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark bg-light border rounded-0">ETOBICOKE</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/etobicoke.jpg" alt="">
+                                </div>
+                            </div>   
+                            <div class="row p-2 d-flex carousel-box">
+                                <div class="col-md-4">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark bg-light border rounded-0">MISSISSAUGA</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Mississauga.jpg" alt="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-light border rounded-0">BRAMPTON</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Brampton.jpg" alt="">
+                                </div>
+                               <div class="col">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark border bg-light rounded-0">CALEDON</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Caledon.jpg" alt="">
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex row p-2 carousel-box">
+                                <div class="col-md-6">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-light border rounded-0">MISSISSAUGA</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Mississauga.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark bg-light border rounded-0">BRAMPTON</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Brampton.jpg" alt="">
+                                </div>
+                            </div>   
+                            <div class="row p-2 d-flex carousel-box">
+                                <div class="col-md-4">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark bg-light border rounded-0">TORONTO</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/toronto.jpg" alt="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-light border rounded-0">ETOBICOKE</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/etobicoke.jpg" alt="">
+                                </div>
+                               <div class="col">
+                                    <span class="card-overlay">
+                                        <button class="btn btn-link text-dark bg-light border rounded-0">CALEDON</button>
+                                    </span>
+                                    <img class="img-fluid" src="./assets/img/Caledon.jpg" alt="">
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev chevron-icon" href="#carousel" role="button" data-slide="prev">
+                        <i class="bi-chevron-left text-dark h2"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next chevron-icon" href="#carousel" role="button" data-slide="next">
+                        <i class="bi-chevron-right text-dark h2"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--  FIND OUT 1 -->
+            <div class="container-fluid find-out-box fob1 p-0 mt-4 d-flex flex-column text-center">
+                <h6 class="text-white">WHAT ARE HOMES IN MY NEIGHBORHOOD SELLING FOR?</h6>
+                <p class="text-light" style="font-family: 'Lora', serif;">Type your address below to find out</p>
+                <span class="d-flex w-100 justify-content-center">
+                    <input type="text" class="find-out-input pl-2" placeholder="Type your property address">
+                    <button class="btn btn-link border rounded-0 text-light ml-2">FIND OUT</button>
+                </span>
+            </div>
+
+
+            <!-- PROPERTIES CAROUSEL -->
+            <div id="carousel-properties" class="carousel slide container-fluid mt-4 p-2 bg-white" data-ride="carousel">
+                    <div class="container">
+                        <p>PROPERTIES</p>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex row p-2 carousel-box">
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Mississauga</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house1.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                852 Riverdale RD.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house2.jpg" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Brampton</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house3.jpg" alt="">
+                                    </div>
+                                </div> 
+                                <div class="d-flex row p-2 carousel-box">
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house4.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Caledon</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house5.jpg" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                54 AREA NEW SW.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house6.jpg" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="d-flex row p-2 carousel-box">
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house4.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Caledon</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house5.jpg" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                54 AREA NEW SW.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house6.jpg" alt="">
+                                    </div>
+                                </div> 
+                                <div class="d-flex row p-2 carousel-box">
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light">
+                                                4922 21A ST SW.<br>
+                                                <strong>Mississauga</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house1.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-light border rounded-0">
+                                                852 Riverdale RD.<br>
+                                                <strong>Toronto</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house2.jpg" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <span class="card-overlay justify-content-end">
+                                            <button class="btn btn-link text-dark bg-light border rounded-0">
+                                                4922 21A ST SW.<br>
+                                                <strong>Brampton</strong>
+                                            </button>
+                                        </span>
+                                        <img class="img-fluid" src="./assets/img/house3.jpg" alt="">
+                                    </div>
+                                </div> 
+                            </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev chevron-icon" href="#carousel-properties" role="button" data-slide="prev">
+                        <i class="bi-chevron-left text-dark h2"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next chevron-icon" href="#carousel-properties" role="button" data-slide="next">
+                        <i class="bi-chevron-right text-dark h2"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+                <!-- FIND OUT 2 -->
+                <div class="container-fluid find-out-box fob2 p-0 mt-4 d-flex flex-column text-center">
+                    <h6 class="text-white">WHAT'S YOUR CURRENT HOUSE OR CONDO WORTH?</h6>
+                    <p class="text-light" style="font-family: 'Lora', serif;">Type your address below to find out</p>
+                    <span class="d-flex w-100 justify-content-center">
+                        <input type="text" class="find-out-input pl-2" placeholder="Type your property address">
+                        <button class="btn btn-link border rounded-0 text-light ml-2">FIND OUT</button>
+                    </span>
+                </div>
+
+
+                <!-- ABOUT CONTAINER -->
+                <div class="container-fluid p-0 mt-4 d-flex flex-column flex-lg-row">
+                    <div class="about-image w-100">
+                        <img src="./assets/img/service2.jpg" class="h-100 img-fluid" style="object-fit: cover;" alt="">
+                    </div>
+                    <div class="about-text w-100 p-5 bg-white">
+
+                        <h4 class="text-muted font-weight-bold">Tina McCarty</h4>
+                        <br>
+                        <h6 class="text-muted">Standing By YOU Every Step of The Way</h6>
+
+                        <p class="small">
+                            With 30 years experience in the Real Estate Industry , you can feel confident that all your real estate needs will be looked after , and I will be there Standing By YOU Every Step Of The Way! Starting my career in 1988 , as a receptionist , working my way through as a deal secretary , administrator and then an Executive Office Administrator for a large downtown Royal Lepage Brokerage in Toronto , allowed me to spend time with my two children growing up , participating in their schooling , and their organized sport events.<br>
+                            <br>In 2007 , with the support and encouragement of Royal LePage Real Estate Services Inc. , it was time to broaden my knowledge , and take the real estate courses with Ontario Real Estate Association ( OREA ) to obtain my Real Estate license in Ontario.<br>
+                            <br>In 2009 , I joined Prudential Ronan Realty , Brokerage in my home town of Tottenham . In 2013 Prudential Ronan decided to afflate with Coldwell Banker . Hence , we are under the umbrella of Coldwell Banker , independently owned and operated . 
+                            <br><br>A FULL Time REALTOR&reg; with the upmost integrity , it would be my pleasure to represent you with all your real estate needs. Whether you are buying, selling or have a friend/family member looking to buy or sell , please call me.<br>
+                            <br>Perhaps you are looking to renovate, or need a tradesperson in a specific field, give me a call, I would me more than happy to refer you to a trusted resource.<br>
+                            <br>Proudly Standing By You Every Step Of The Way, and because of all my past clients, it gives me great pleasure and honor to share with you my accomplishments of being an award winner since my first year in real estate, allowing me to be a top producing REALTOR&reg;.
+                        </p>
+
+                        <p class="text-muted small">
+                            <i class="bi-telephone-fill mr-1"></i>
+                            416-885-1445
+                        </p>
+                        <p class="text-muted small">
+                            <i class="bi-envelope-fill mr-1"></i>
+                            tinamccarty@sympatico.ca
+                        </p>
+
+                        <button class="btn btn-link border border-dark text-muted rounded-0">FIND OUT MORE</button>
+                    </div>
+                </div>
+
+                <!-- TESTIMONIALS CAROUSEL -->
+                <div id="carousel-testimonials" class="carousel slide container-fluid mt-4 p-2 bg-white" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-testimonials" data-slide-to="0" class="active bg-dark"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="1" class="bg-dark"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="2" class="bg-dark"></li>
+                      </ol>
+                    <div class="container text-center p-5">
+                        <p class="mb-5">TESTIMONIALS</p>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, qui laborum possimus adipisci ex voluptate repellendus facilis nesciunt, esse corporis molestias quos non quidem inventore! Minus nulla reprehenderit distinctio voluptatibus et blanditiis culpa animi officia totam excepturi pariatur esse facilis, quidem temporibus assumenda magnam quia sit modi praesentium, labore soluta vero eum earum. Repudiandae similique alias aliquam praesentium repellat cum, hic ullam recusandae? Dicta tenetur natus, vel perspiciatis animi deserunt.</p>
+                                <br>
+                                <h6>- JANE DOE</h6>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est et doloremque atque neque assumenda architecto eos excepturi ea laboriosam delectus quia consequatur, ducimus, praesentium illo ullam expedita voluptas cumque officiis voluptates placeat nulla quam blanditiis sed? Quaerat tempora inventore magnam dolores ipsa exercitationem et architecto fuga repellat? Et, dolore!</p>
+                                <br>
+                                <h6>- JOHN DOE</h6>
+                            </div>
+
+                            <div class="carousel-item">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est et doloremque atque neque assumenda architecto eos excepturi ea laboriosam delectus quia consequatur, ducimus, praesentium illo ullam expedita voluptas cumque officiis voluptates placeat nulla quam blanditiis sed? Quaerat tempora inventore magnam dolores ipsa exercitationem et architecto fuga repellat? Et, dolore!</p>
+                                <br>
+                                <h6>- JOHN WICK</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev chevron-icon" href="#carousel-testimonials" role="button" data-slide="prev">
+                        <i class="bi-chevron-left text-dark h2"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next chevron-icon" href="#carousel-testimonials" role="button" data-slide="next">
+                        <i class="bi-chevron-right text-dark h2"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!--  CONTACT FORM  -->
+                <div class="container-fluid contact-box mt-4 position-relative">
+                    <div class="card-overlay">
+                        <form class="h-100 p-3 d-flex flex-column">
+                            <h6 class="text-light mb-3 font-weight-bold">CONTACT ME</h6>
+                            <span class="d-flex" style="gap:10px;">
+                                <input type="text" class="contact-input p-3" placeholder="Full Name">
+                                <input type="text" class="contact-input p-3" placeholder="Email Address">
+                            </span>
+
+                            <textarea name="" id="" class="w-100 h-50 mt-3 text-dark p-2 contact-msg" placeholder="Message"></textarea>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-lg-flex pt-3">
+                                    <p class="text-white small">
+                                        <i class="bi-telephone-fill mr-1"></i>
+                                        416-885-1445
+                                    </p>
+                                    <p class="text-white ml-lg-5 small">
+                                        <i class="bi-envelope-fill mr-1"></i>
+                                        tinamccarty@sympatico.ca
+                                    </p>
+                                </div>
+                                <div class="d-sm-flex pt-3 social-icons">
+                                    <a href="#"><i class="bi-instagram text-white"></i></a>
+                                    <a href="#"><i class="bi-facebook text-white"></i></a>
+                                    <a href="#"><i class="bi-linkedin text-white"></i></a>
+                                    <a href="#"><i class="bi-twitter text-white"></i></a>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-link w-50 border text-light rounded-0" type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+
+                <div class="container-fluid bg-white footer p-4 mt-4 mb-4">
+                    <div class="container">
+                        <p class="text-muted">TINA McCARTY</p>
+                        <hr>
+                        <div class="d-flex flex-column flex-md-row">
+                            <span>
+                                <p class="text-muted">REALTOR&reg;</p>
+                                <p class="text-dark small">
+                                    <i class="bi-telephone-fill mr-1"></i>
+                                416-885-1445
+                            </p>
+                            <p class="text-dark small">
+                                <i class="bi-envelope-fill mr-1"></i>
+                                tinamccarty@sympatico.ca
+                            </p>
+                            </span>
+                            <span>
+                                <ul class="pl-md-5 p-0">
+                                    <a href="#"><li class="text-muted small">HOME</li></a>
+                                    <a href="#"><li class="text-muted small">WELCOME</li></a>
+                                    <a href="#"><li class="text-muted small">FREE REPORTS</li></a>
+                                    <a href="#"><li class="text-muted small">PROPERTIES</li></a>
+                                </ul>
+                            </span>
+                            <span>
+                                <ul class="pl-md-5 p-0">
+                                    <a href="#"><li class="text-muted small">HELPFUL RESOURCES</li></a>
+                                    <a href="#"><li class="text-muted small">BUYERS</li></a>
+                                    <a href="#"><li class="text-muted small">SELLERS</li></a>
+                                </ul>
+                            </span>
+                        </div>
+                        <p class="text-muted small">
+                            Copyright 2019 All rights reserved. Disclaimer: Information herein deemed reliable but not guaranted by CREB&reg;. Listing information last updated 3/4/2019 at 3:44am MDT. The trademarks REALTOR&reg;, REALTORS&reg;, and the REALTOR&reg; logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS&reg;, Multiple Listing Service&reg; and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA. Uses under license. 
+                             <a href="#" class="text-muted"> Register</a> | <a href="#" class="text-muted">Login</a>
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

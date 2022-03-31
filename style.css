@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(225, 225, 225);
+}
+li{
+    list-style: none;
+}
+.banner-overlay{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-image: url(./assets/img/banner\ image.jpg);
+    background-size: cover;
+    background-position: 0 -50px;
+}
+.social-icons a i{
+    margin-left:20px;
+    color: #5f5f5f;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.service-cards {
+    gap: 10px;
+}
+.service-card{
+    height: 230px;
+}
+.card-overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-card:nth-child(1){
+    background: url(./assets/img/service1.jpg);
+    background-size: cover;
+}
+.service-card:nth-child(2){
+    background: url(./assets/img/service2.jpg);
+    background-size: cover;
+}
+.service-card:nth-child(3){
+    background: url(./assets/img/service3.jpg);
+    background-size: cover;
+}
+.service-card:nth-child(4){
+    background: url(./assets/img/service4.jpg);
+    background-size: cover;
+} 
+.carousel-item .row div{
+    height: 220px;
+    overflow: hidden;
+    padding: 0;
+}
+.carousel-item .row div img{
+    min-height: 100%;
+    min-width: 100%;
+}
+.carousel-box{
+    gap: 15px;
+}
+.find-out-box{
+    height: 250px;
+    overflow: hidden;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+}
+.fob1{
+    background-image: url(./assets/img/StreetM.jpg);
+}
+.fob2{
+    background-image: url(./assets/img/homew.jpg);
+    background-size: cover;
+}
+.find-out-input{
+    width: 40%;
+}
+.contact-box{
+    height: 400px;
+    background-image: url(./assets/img/contact-form.jpg);
+    background-position: 50% 450px;
+}
+.contact-input{
+    width: 50%;
+    background-color: rgba(255,255,255,0.8);
+    outline: none;
+    border: none;
+}
+.contact-msg{
+    outline: none;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+}
+.property-search input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+.play-btn{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000;
+    height: 80px;
+}
+@media screen and (max-width:991px){
+    .top-nav-menu{
+        background-color: rgb(22, 22, 26);
+        z-index: 100000000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .toggle-nav-btn{
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        z-index: 10000000;
+    }
+}
+@media screen and (max-width:768px){
+    .carousel-item .row div{
+        margin-top: 15px;
+    }
+    .toggle-nav-btn-inner{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100000000;
+    }
+    .top-nav-menu{
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .property-search{
+        background-color: rgba(0,0,0,0.6);
+    }
+    .property-search button{
+        margin-top: 15px;
+    }
+    .logo{background-color: rgba(0,0,0,0.6);}
+    .play-btn{
+        top: 25%;
+    }
+}
